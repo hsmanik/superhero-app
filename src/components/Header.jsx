@@ -13,8 +13,11 @@ export const Header = () => {
           <img src="/vite.svg" alt="logo" />
         </div>
         <div className=" mx-auto ">
-          <h1 className=" font-bold text-md md:text-3xl sm:text-xl dark:text-gray-300 font-Poppins">
-            Super Hero App
+          <h1
+            className=" font-bold text-md md:text-3xl sm:text-xl dark:text-white font-Poppins 
+           "
+          >
+            Countries App
           </h1>
         </div>
 
@@ -26,7 +29,7 @@ export const Header = () => {
                 setTheme("dark");
                 localStorage.setItem("theme", "dark");
               }}
-              className=" cursor-pointer transition-all duration-500"
+              className=" cursor-pointer "
             />
           ) : (
             <IoSunny
@@ -40,15 +43,18 @@ export const Header = () => {
           )}
         </div>
       </div>
-      <div className=" flex items-center justify-between max-w-[640px] bg-slate-200 rounded-3xl my-3 pl-1 mx-2 sm:mx-auto">
+      <div
+        className=" flex items-center justify-between max-w-[640px] bg-zinc-300 rounded-3xl my-3 pl-1 mx-2 sm:mx-auto
+         "
+      >
         <input
           type="text"
-          placeholder=" your favorite superhero ?"
-          className=" border-none mx-2 bg-inherit outline-none w-full"
+          placeholder=" wish to visit any country?"
+          className=" border-none mx-2 bg-transparent outline-none w-full"
         />
         <button
           type="button"
-          className="text-black font-bold bg-red-600 hover:bg-red-500  focus:ring-red-900  rounded-3xl text-sm px-5 py-2 text-center me-2  m-1"
+          className="text-black font-bold bg-red-500 hover:bg-red-500  focus:ring-red-900  rounded-3xl text-sm px-5 py-2 text-center me-2  m-1"
         >
           Go!
         </button>
